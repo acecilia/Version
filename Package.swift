@@ -13,5 +13,5 @@ let pkg = Package(
 )
 
 #if !os(Linux)
-pkg.targets.append(.testTarget(name: "Tests", dependencies: ["Version"], path: "Tests"))
+pkg.targets.append(.testTarget(name: "VersionTests", dependencies: ["Version"], path: "Tests"))
 #endif
